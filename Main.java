@@ -1,5 +1,11 @@
+import java.util.Scanner;
+
 class Main {
   public static void main(String[] args) {
-      System.out.println(Multiplier.multiply(14, 8));
+      Scanner scanner = new Scanner(System.in);
+      int a = scanner.nextInt();
+      int b = scanner.nextInt();
+      scanner.close();
+      System.out.printf("%d * %d = %d\n", a, b, Multiplier.multiply(a, b));
   }
 }
